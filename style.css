@@ -1,0 +1,59 @@
+body{
+  background-color: black;
+}
+.container{
+  margin-top: 100px;
+}
+#youtube,
+#instagram,
+#telegram,
+#facebook{
+  margin-left: 10px;
+  font-size: 8em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: 0 40;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+  cursor: pointer;  
+}
+#instagram{
+  animation-delay: 0.3s;
+}
+#facebook{
+  animation-delay: 0.7s;
+}
+#telegram{
+  animation-delay: 0.1s;
+}
+@keyframes animate{
+  from{
+    filter: hue-rotate(0deg);
+  }
+  to{
+    filter: hue-rotate(360deg);
+  }
+}
+#diamond{
+  padding: 3px;
+  font-size: 10em;
+  border-radius: 10%;
+  animation: glow 2s linear infinite;
+}
+
+.diamond{
+  margin-top: 150px;
+  margin-left: 35px;
+}
+
+@keyframes glow{
+  from{
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px orangered, 0 0 40px orangered, 0 0 50px orangered, 0 0 60px orangered, 0 0 70px orangered;
+  }
+  to{
+    text-shadow: 0 0 5px lightskyblue, 0 0 25px lightskyblue, 0 0 50px lightskyblue 0 0 100px #01d9fa;
+  }
+}
